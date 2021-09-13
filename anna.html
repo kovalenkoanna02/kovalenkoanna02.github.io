@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<!-- комментарий в HTML -->
+
+<!-- в первой строке мы сообщаем браузеру,
+  что это документ HTML5 -->
+
+<html lang="ru">
+
+  <head>
+    <title> Название страницы</title>
+  </head>
+
+  <body>
+      <h1>Коваленко Анна</h1>
+    
+    <h2>Список</h2>
+
+    <ol id="list">
+        <li><a href="http://example.com/" > Главная страница example.com</a></li>
+       
+        <li><a href="https://example.com/" > Главная страница example.com в протоколе https</a></li>
+        <li><a href="ftp://example.com/file.txt"> Без авторизации</a></li>
+        <li><a href="ftp://savva:pass123@example.com/file.txt"> С авторизацией</a></li>
+        <li><a href="https://example.com/contacts#tel"> Фрагмент страницы с сайта</a></li>
+        <li><a href="#list"> Фрагмент страницы</a></li>
+        <li><a href="https://example.com/about/main?example=1&id=53"> Два параметра </a></li>
+        <li>
+            <ul>
+                <li><a href="#form" title="form"> Форма</a></li>
+                <li><a href="#list" title="nspisok"> Список</a></li>
+            </ul>
+        </li>
+		 <li><a> Без href</a></li>
+		 <li><a href="#" title="nothing">Ссылка с пустым href </a></li>
+		 <li><a href="#" rel="nofollow">Nofollow </a></li>
+		 <li><noindex><a href="#" title="noindex" >Noindex </a></li> 
+		 <li><p>Абзац<a href="http://example.com/" target="_blank"> Абзац</a></p></li>
+		  <li><a href="http://example.com/" title="img.jpg" target="_blank"><img src="BECUlgk-tsA.jpg" width="250" height="400"> </a></li>
+		  <li><img src="0zarPPcKrak.jpg" width="300" height="400" usemap="#image-map"><map name="image-map">
+    <area target="" alt="" title="" href="" coords="" shape="rect">
+</map></li>
+        <li><a href="main" title="относительная ссылка"> catalog </a></li>
+        <li><a href="./about/main" title="относительная ссылка в каталоге about"> about </a></li>
+        <li><a href="../catalog/text" title="относительная ссылка уровнем выше">ссылка уровнем выше </a></li>
+        <li><a href="../../catalog/text" title="относительная ссылка двумя уровнями выше"> ссылка двумя уровнями выше </a></li>
+		 <li><a href="/" target="_blank"> сокращенная главная</a></li>
+		 <li><a href="/main" target="_blank"> сокращенная внутренняя</a></li>
+    
+    <h2 id="form">Моя форма</h2>
+
+   <form action="/"
+      method="POST">
+
+      <label>
+        Введите имя:<br />
+        <input name="field-name-1"
+          value="Анна" />
+      </label><br />
+
+      <label>
+        Введите email:<br />
+        <input name="field-email"
+          value="safronovaannnnn@mail.ru"
+          type="email" />
+      </label><br />
+
+      <label>
+        Укажите дату вашего рождения:<br />
+        <input name="field-date"
+          value="2002-10-15"
+          type="date" />
+      </label><br />
+      
+	   Укажите ваш пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Женский" />
+        Женский</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Мужской" />
+        Мужской</label><br />
+		
+         Укажите количество ваших конечностей:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-2" value="0" />
+        Меньше 4х</label>
+      <label><input type="radio"
+        name="radio-group-2" value="1" />
+        4 конечности</label><br />
+		<label><input type="radio"
+        name="radio-group-2" value="2" />
+        Больше 4х</label><br />
+	  
+		
+		<label>
+        Список ваших суперспособностей:<br />
+        <select name="field-name-3">
+          <option value="бессмертие">бессмертие</option>
+          <option value="прохождение сквозь стены" selected="selected">прохождение сквозь стены</option>
+          <option value="левитация">левитация</option>
+        </select>
+      </label><br />
+        Биография :<br />
+        <textarea name="field-name-2">Ваша биография</textarea>
+      </label><br />
+
+      С контрактом ознакомлен:<input type="checkbox" checked="checked" name="check-1" /><br />
+      <label></label><br />
+
+      
+      <input type="submit" value="Отправить" />
+    </form>
+
+  </body>
+
+</html>
