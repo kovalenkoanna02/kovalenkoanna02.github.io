@@ -79,4 +79,9 @@ footer {
   height: 100px;
 }
 
+.calc {
+  margin: 20px;
+  background-color: plum;
+  border: 2px solid black;
+}
 

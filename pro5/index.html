@@ -75,7 +75,7 @@
                 <li><a href="/main" target="_blank"> сокращенная внутренняя</a></li>
             </ol>
             
-            <table class="main-table order-2 order-md-3">
+            <table class="main-table order-3 order-md-2">
                 <tr>
                     <th>First</th>
                     <th>Second</th>
@@ -101,7 +101,7 @@
                 </tr>
             </table>
            
-            <div class="order-3 order-md-2"> 
+            <div class="order-2 order-md-3"> 
                 <form action="/" method="POST">
                 <h2>Моя форма</h2>
 
@@ -154,7 +154,21 @@
                <label> <input type="submit" value="Отправить" /></label>
             </form>
         </div>
-           
+        <div class="calc order-4 order-md-4"> 
+            <label>
+            Цена:
+            <br />
+            <input id="price" type="text" name="field-name" placeholder="Введите цену товара">
+        </label> <br />
+        <label>
+            Кол-во товаров:
+            <br />
+            <input id="quantity" type="text" name="field-name" placeholder="Введите кол-во товаров">
+        </label>
+        <br />
+        <button onclick="calculator()">Посчитать</button>
+        <p>Итоговая стоимость: </p>
+        <p id="result"></p></div>
         </div>
     </div>
     <footer>
@@ -164,6 +178,7 @@
             </div>
         </div>
     </footer>
+    <script src="calc.js"></script>
 </body>
 
 </html>
