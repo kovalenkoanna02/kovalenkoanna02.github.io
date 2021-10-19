@@ -169,6 +169,32 @@
         <button onclick="calculator()">Посчитать</button>
         <p>Итоговая стоимость: </p>
         <p id="result"></p></div>
+        <div class="calc container calk p-3 mb-3 col-md-8  order-2 order-md-3 text-center">
+    
+            Выберите товар:<br />
+            <select id="types" onchange="turbo()">
+                <option value="0">Выбрать</option>
+                <option value="100">Роза</option>
+                <option value="120">Роза метровая</option>
+                <option value="250">Роза голландская, упаковка бесплатно</option>
+            </select><br />
+            <div id="radios" onchange="turbo()" style="display:none;" >
+                <label><input type="radio" name="radiolimb" value="20" />
+                    Лента</label>
+                <label><input type="radio"  name="radiolimb" value="40" />
+                    Целофан</label>
+                <label><input type="radio"  name="radiolimb" value="250" />
+                    Крафтовая бумага</label></div>
+                    <div class="mr-3" id="boxes" style="display:none;">
+                        <label><input type="checkbox" onchange="turbo()" id="check" value="1000"> Подарок </label>
+                    </div>
+        <label>
+            Кол-во товаров:
+            <br />
+            <input id="quantitys" oninput="turbo()" value="1" type="text" name="field-name" placeholder="Введите кол-во товаров"></label><br />
+        <p>Итоговая стоимость: </p>
+        <p id="results"></p>
+    </div>
         </div>
     </div>
     <footer>
@@ -179,6 +205,7 @@
         </div>
     </footer>
     <script src="calc.js"></script>
+    <script src="supercalc.js"></script>
 </body>
 
 </html>
