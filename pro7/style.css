@@ -7,15 +7,6 @@
   max-width: 100%;
   margin: 0 auto;
 }
-.container.flex{
-  display: flex;
-  flex-direction: column;
-}
-.calk {
-  background-color:plum;
-  font-size: 20px;
-  border-radius: 5px;
-}
 header {
   width: 100%;
   background-color:grey;
@@ -40,42 +31,24 @@ padding:10px;
   float: left;
   margin: 10px;
 }
-
-.navigation {
-  list-style: none;
-  display: inline-block;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: plum;
-  height: 60px;
-  width: 100%;
-  text-align: center;
-  align-content: center;
-}
-#list{
-  order: 1;
-}
-.main-table {
-  margin: 20px;
-  height: 200px;
-  width: auto;
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-.main-table td {
-  border: 1px solid black;
-  text-align: center;
-}
-.main-table tr:nth-child(1) {
+#fon{
   background-color: plum;
 }
-.content li {
-  margin-left: 25px;
-  height: auto;
+.slick-arrow {
+  background-color: rgba(0, 0, 0, 0.50) !important;
+  width: 50px !important;
+  height: 50px !important;
+  border: 5px purple solid;
+  border-radius: 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+  z-index: 2000;
 }
-form {
-  margin: 20px;
+.slider{
+margin: 2% auto;
+width: 50%;
+background-color: white;
+border-radius: 25px;
 }
 
 footer {
@@ -84,9 +57,4 @@ footer {
   height: 100px;
 }
 
-.calc {
-  margin: 20px;
-  background-color: plum;
-  border: 2px solid black;
-}
 
