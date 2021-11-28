@@ -1,92 +1,230 @@
-
 * {
-  margin: 0;
-  padding: 0;
-}
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-.container.flex{
-  display: flex;
-  flex-direction: column;
-}
-.calk {
-  background-color:plum;
-  font-size: 20px;
-  border-radius: 5px;
-}
-header {
-  width: 100%;
-  background-color:grey;
-  height: 140px;
-}
-.head{
-width:100%;
-padding: 10px; 
-height:120px;
-}
-.text 
-{
-width:90%; 
-background: purple;
-color: black;
-padding:10px; 
-
-}
-.head img {
-  width: 100px;
-  height: 120px;
-  float: left;
-  margin: 10px;
-}
-
-.navigation {
-  list-style: none;
-  display: inline-block;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: plum;
-  height: 60px;
-  width: 100%;
-  text-align: center;
-  align-content: center;
-}
-#list{
-  order: 1;
-}
-.main-table {
-  margin: 20px;
-  height: 200px;
-  width: auto;
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-.main-table td {
-  border: 1px solid black;
-  text-align: center;
-}
-.main-table tr:nth-child(1) {
-  background-color: plum;
-}
-.content li {
-  margin-left: 25px;
-  height: auto;
-}
-form {
-  margin: 20px;
-}
-
-footer {
-  width: 100%;
-  background-color: grey;
-  height: 100px;
-}
-
-.calc {
-  margin: 20px;
-  background-color: plum;
-  border: 2px solid black;
-}
-
+    box-sizing: border-box;
+    }
+    
+    body {
+    margin: 0;
+    padding: 0;
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: plum;
+    }
+    
+    .title {
+    font-size: 70px;
+    }
+    
+    .openBtn {
+    margin-top: 10px;
+    height: 50px;
+    width: 170px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: purple;
+    }
+    
+    
+    .hiddenDiv {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .formDiv {
+    background-color: #ffb6c1;
+    max-width: 500px;
+    height: 420px;
+    width: 100%;
+    color:rgb(0, 0, 0);
+    padding: 0px 20px;
+    border-radius: 8px;
+    position: relative;
+    }
+    
+    .titleOfForm {
+    margin-top: 5px;
+    font-size: 50px;
+    text-align: center;
+    }
+    
+    label {
+    font-size: 20px;
+    }
+    
+    input {
+    font-size: 20px;
+    margin-bottom: 6px;
+    }
+    
+    textarea {
+    width: 70%;
+    height: 70px;
+    font-size: 20px;
+    resize: none;
+    }
+    
+    #checkbox {
+    margin-bottom: 35px;
+    width: 15px;
+    height: 15px;
+    }
+    
+    #sendBtn {
+    font-size: 20px;
+    width: 130px;
+    position: absolute;
+    right: 5px;
+    background-color: purple;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border:none;
+    border-radius: 8px;
+    
+    }
+    
+    #sendBtn:disabled {
+    display: none;
+    }
+    
+    #sendBtn:hover {
+    background-color: purple;
+    font-weight: bold;
+    }
+    
+    .closeBtn {
+    font-size: 20px;
+    width: 130px;
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    background-color: purple;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    }
+    
+    .closeBtn:hover {
+    background-color: purple;
+    font-weight: bold;
+    }
+    
+    .hiddenResponse{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center
+    }
+      
+    
+    .resForm{
+    background-color:  #ffb6c1;
+    max-width: 500px;
+    height: 200px;
+    width: 100%;
+    padding: 0px 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    }
+    
+    .close {
+    font-size:20px;
+    width: 200px;
+    right:10px;
+    bottom:25px;
+    position: absolute;
+    background-color:  purple ;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    }
+    
+    .close:hover {
+    background-color: purple;
+    font-weight: bold;
+    }
+    
+    .ans {
+        font-size: 30px;
+        color:rgb(0, 0, 0);
+        margin-top: 70px;
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+    .openBtn {
+        width: 200px;
+        font-size: 20px;
+    }
+    
+    .title {
+        font-size: 40px;
+    }
+    
+    .hiddenDiv {
+        height: 90%;
+    }
+    
+    .formDiv {
+        width: 90%;
+        height: 300px;
+    }
+    
+    .titleOfForm {
+        font-size: 25px;
+    }
+    
+    label {
+        font-size: 15px;
+    }
+    
+    input {
+        font-size: 13px;
+    }
+    
+    textarea {
+        height: 90px;
+        font-size: 13px;
+        resize: none;
+    }
+    
+    #checkbox {
+        margin-bottom: 35px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    #sendBtn {
+        font-size: 15px;
+        width: 100px;
+        bottom: 30px;
+    }
+    
+    .closeBtn {
+        font-size: 15px;
+        width: 100px;
+        bottom: 10px;
+    }
+    
+    .responseForm{
+        width: 80%;
+    }
+    }
+    
